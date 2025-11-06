@@ -132,7 +132,10 @@ def main() -> None:
         print(f"Match: {re_encrypted == ENCRYPTED_TEXT}")
 
     except ValueError as e:
-        print(f"\nError: {e}")
+        print(f"\nError: There was a problem with the input {e}")
+
+    except Exception as e:
+        print(f"\nAn unexpected error occurred: {e}")
 
     print("\n" + "=" * 50 + "\n")
 
