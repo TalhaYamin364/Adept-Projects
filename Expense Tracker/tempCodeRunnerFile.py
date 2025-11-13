@@ -1,1 +1,1 @@
-sum
+print(range(10))
